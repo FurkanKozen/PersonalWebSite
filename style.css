@@ -1,1 +1,101 @@
-.profile-picture{width:200px;height:200px;background-color:#ddd}body{font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;color:#444}body header{margin:0px auto;width:800px}body header section{display:flex;justify-items:baseline;flex-direction:row;background-color:#ededed}body header section img{width:200px;height:200px}body header ul{display:flex;justify-content:space-evenly;margin:10px;padding:10px}body header ul li>a{color:#444}body header ul li>a:hover{border-top:solid 1px #444;border-bottom:solid 1px #444;color:#000}body main{margin:0px auto;width:800px}body footer{margin:0px auto;width:800px}body h1{font-size:60px;line-height:200px;font-weight:bold;margin:0 auto;font-variant-caps:petite-caps}body h2{margin:10px 0;margin-top:40px;padding:10px;text-align:center;font-weight:bold;background-color:#ededed;text-transform:uppercase}body a{text-decoration:none}body p{margin:10px;line-height:150%;text-indent:30px}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fafafa;
+  color: #272727;
+}
+
+header {
+  margin: 40px auto;
+  width: 700px;
+}
+
+main {
+  display: block;
+  margin: 40px auto;
+  width: 700px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+img {
+  display: block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Segoe UI Black";
+  font-size: 42px;
+  line-height: 120px;
+  color: #272727;
+  text-align: center;
+}
+
+h2 {
+  position: relative;
+  text-align: center;
+  font-size: 22px;
+  bottom: 30px;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+a {
+  color: #272727;
+  text-decoration: none;
+  padding: 8px;
+  padding-bottom: 0px;
+  font-size: 20px;
+}
+
+a:hover {
+  border-bottom: solid 4px #272727;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+a:active {
+  background-color: #272727;
+  color: #fafafa;
+  -webkit-transition: 70ms;
+  transition: 70ms;
+}
+
+p {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 150%;
+  text-indent: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    width: 100%;
+  }
+  main {
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  li {
+    margin: 18px;
+  }
+  a {
+    padding: 14px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
