@@ -1,10 +1,25 @@
-$black         : #272727;
-$white         : #fafafa;
-$header-height : 120px;
-$layout-width  : 700px;
+$black        : #272727;
+$white        : #fff;
+$image-length : 120px;
+$layout-width : 700px;
+
+@font-face {
+  font-family: OpenSans;
+  src        : url(./fonts/OpenSans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: OpenSansBold;
+  src        : url(./fonts/OpenSans/OpenSans-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: OpenSansLight;
+  src        : url(./fonts/OpenSans/OpenSans-Light.ttf);
+}
 
 body {
-  font-family     : "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family     : OpenSans, Tahoma, Geneva, Verdana, sans-serif;
   background-color: $white;
   color           : $black;
 }
@@ -21,30 +36,60 @@ main {
 }
 
 section {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 img {
   display      : block;
-  width        : $header-height;
-  height       : $header-height;
+  width        : $image-length;
+  height       : $image-length;
   border-radius: 50%;
   margin       : 0 auto;
 }
 
 h1 {
-  font-family: "Segoe UI Black";
+  font-family: OpenSansBold, Tahoma, Geneva, Verdana, sans-serif;
   font-size  : 42px;
-  line-height: $header-height;
+  margin-top : 20px;
   color      : $black;
   text-align : center;
 }
 
 h2 {
-  position  : relative;
-  text-align: center;
-  font-size : 22px;
-  bottom    : 30px;
+  font-family: OpenSansLight, Tahoma, Geneva, Verdana, sans-serif;
+  text-align : center;
+  font-size  : 24px;
+  margin-top : 20px;
+}
+
+address {
+  margin-top  : 20px;
+  margin-left : auto;
+  margin-right: auto;
+  width       : 200px;
+}
+
+address a {
+  font-family  : OpenSansLight, Tahoma, Geneva, Verdana, sans-serif;
+  display      : block;
+  font-size    : 16px;
+  margin-top   : 20px;
+  margin-bottom: 0;
+  margin-left  : auto;
+  margin-right : auto;
+  text-align   : center;
+  padding      : 0px;
+
+  &:hover {
+    border-bottom  : none;
+    text-decoration: underline;
+  }
+
+  &:active {
+    background-color: inherit;
+    color           : inherit;
+    font-weight     : bold;
+  }
 }
 
 ul {
@@ -96,6 +141,6 @@ p {
   }
 
   a {
-    padding: 14px;
+    padding: 11px 14px;
   }
 }

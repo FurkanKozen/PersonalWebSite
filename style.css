@@ -1,6 +1,21 @@
+@font-face {
+  font-family: OpenSans;
+  src: url(./fonts/OpenSans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: OpenSansBold;
+  src: url(./fonts/OpenSans/OpenSans-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: OpenSansLight;
+  src: url(./fonts/OpenSans/OpenSans-Light.ttf);
+}
+
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fafafa;
+  font-family: OpenSans, Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
   color: #272727;
 }
 
@@ -16,7 +31,7 @@ main {
 }
 
 section {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 img {
@@ -28,18 +43,48 @@ img {
 }
 
 h1 {
-  font-family: "Segoe UI Black";
+  font-family: OpenSansBold, Tahoma, Geneva, Verdana, sans-serif;
   font-size: 42px;
-  line-height: 120px;
+  margin-top: 20px;
   color: #272727;
   text-align: center;
 }
 
 h2 {
-  position: relative;
+  font-family: OpenSansLight, Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  font-size: 22px;
-  bottom: 30px;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+address {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+
+address a {
+  font-family: OpenSansLight, Tahoma, Geneva, Verdana, sans-serif;
+  display: block;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 0px;
+}
+
+address a:hover {
+  border-bottom: none;
+  text-decoration: underline;
+}
+
+address a:active {
+  background-color: inherit;
+  color: inherit;
+  font-weight: bold;
 }
 
 ul {
@@ -69,7 +114,7 @@ a:hover {
 
 a:active {
   background-color: #272727;
-  color: #fafafa;
+  color: #fff;
   -webkit-transition: 70ms;
   transition: 70ms;
 }
@@ -95,7 +140,7 @@ p {
     margin: 18px;
   }
   a {
-    padding: 14px;
+    padding: 11px 14px;
   }
 }
 /*# sourceMappingURL=style.css.map */
